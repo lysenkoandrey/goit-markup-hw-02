@@ -1,0 +1,33 @@
+body {
+    width: 1600px;
+}
+
+header {
+    height: 80px;
+    background-color: yellow;
+}
+
+
+.section-1 {
+    height: 600px;
+}
+
+
+.section-2 {
+    height: 195px;
+}
+
+
+.section-3 {
+    height: 480px;
+}
+
+
+.section-4 {
+    height: 480px;
+}
+
+
+footer {
+    height: 250px;
+}
