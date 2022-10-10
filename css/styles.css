@@ -1,33 +1,119 @@
+:root {
+    --title-text-color: #212121;
+    --primary-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --text-white-color: #ffffff;
+    --botton-text-color: rgba(255, 255, 255, 0.6);
+    --botton-portfolio-bgc-color: #F5F4FA;
+    --bgc-page: #ffffff;
+    --footer-bgc: #2F303A;
+}
+
+.list {
+    list-style: none;
+}
+
 body {
-    width: 1600px;
+    font-family: roboto, sans-serif;
 }
 
-header {
-    height: 80px;
-    background-color: yellow;
+.uppercase-text {
+    text-transform: uppercase;
 }
 
-
-.section-1 {
-    height: 600px;
+/* LOGO */
+.logo {
+    color: var(--accent-text-color);
+    font-family: Raleway;
 }
 
-
-.section-2 {
-    height: 195px;
+header .logo > span {
+    color: #000000;
 }
 
-
-.section-3 {
-    height: 480px;
+footer .logo > span {
+    color: #ffffff;
 }
 
+/* HEADER */
 
-.section-4 {
-    height: 480px;
+.site-nav .link {
+    color: var(--title-text-color);
+}
+ .contacts-nav .link {
+    color: var(--primary-text-color);
+ }
+
+.site-nav .link:hover,
+.contacts-nav .link:hover,
+.site-nav .link:focus,
+.contacts-nav .link:focus {
+    color: var(--accent-text-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-text-color);
+}
+
+/* HERO */
+
+.hero-title {
+    color: red;
+}
+
+.main-portfolio,
+.main-page {
+    background-color: var(--bgc-page);
+}
+
+/* SECTION */
+
+.section {
+    color: var(--primary-text-color);
+}
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+.section.section-four {
+    background-color: var(--botton-portfolio-bgc-color);
+}
+
+/* FOOTER */
 
 footer {
-    height: 250px;
+    background-color: var(--footer-bgc);
+}
+
+address .map-link {
+    color: var(--text-white-color);
+}
+
+address a.link {
+    color: var(--botton-text-color);
+}
+
+/* BUTTON */
+
+button.main-page {
+    background-color: var(--accent-text-color);
+    color: var(--text-white-color);
+}
+
+button.main-page:focus,
+button.main-page:hover {
+    background-color: var(--accent-text-color);
+    color: var(--text-white-color);
+}
+
+button.portfolio-page {
+    background-color: var(--botton-portfolio-bgc-color);
+    color: var(--title-text-color);
+}
+
+button.portfolio-page:hover,
+button.portfolio-page:focus {
+    background-color: var(--accent-text-color);
+    color: var(--text-white-color);
 }
