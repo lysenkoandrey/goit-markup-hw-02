@@ -16,6 +16,7 @@
 body {
     background-color: var(--bgc-page);
     font-family: roboto, sans-serif;
+    color: var(--title-text-color);
     letter-spacing: 0.03em;
 }
 
@@ -42,6 +43,11 @@ footer .logo > span {
     color: #ffffff;
 }
 
+header .logo > span:hover,
+footer .logo > span:hover {
+    color: var(--accent-text-color);
+}
+
 /* HEADER */
 
 .site-nav .link {
@@ -54,7 +60,6 @@ footer .logo > span {
 
  .site-nav .link,
  .contacts-nav .link {
-
     letter-spacing: 0.02em;
  }
 
@@ -78,12 +83,25 @@ header .link {
 
 /* HERO */
 
-.hero-title {
+.main-page h2.section-titles, 
+.main-portfolio h2.section-title,
+.main-portfolio h1.section-title {
     color: red;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 44;
+    font-size: 44px;
     line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.hero-title {
+    color: green;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
     letter-spacing: 0.06em;
 }
 
@@ -113,6 +131,7 @@ header .link {
     line-height: 1.71;
 }
 
+.main-portfolio h1.section-title,
 section h2.section-title {
     font-weight: 700;
     font-size: 36px;
@@ -158,30 +177,35 @@ address {
     font-style: normal;
 }
 
+footer a.link:hover,
+footer a.link:focus {
+    color: var(--accent-text-color);
+}
+
 /* BUTTON */
 
-button {
+.button {
     font-family: inherit;
 }
 
-button.main-page {
+button.buttons {
     background-color: var(--accent-text-color);
     color: var(--text-white-color);
 }
 
-button.main-page:focus,
-button.main-page:hover {
-    background-color: var(--accent-text-color);
-    color: var(--text-white-color);
-}
-
-button.portfolio-page {
+button.buttons:focus,
+button.buttons:hover {
     background-color: var(--botton-portfolio-bgc-color);
     color: var(--title-text-color);
 }
 
-button.portfolio-page:hover,
-button.portfolio-page:focus {
+button.portfolio-filter {
+    background-color: var(--botton-portfolio-bgc-color);
+    color: var(--title-text-color);
+}
+
+button.portfolio-filter:hover,
+button.portfolio-filter:focus {
     background-color: var(--accent-text-color);
     color: var(--text-white-color);
 }
