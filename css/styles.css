@@ -191,6 +191,11 @@ footer a.link:focus {
 button.buttons {
     background-color: var(--accent-text-color);
     color: var(--text-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    letter-spacing: inherit;
 }
 
 button.buttons:focus,
@@ -202,6 +207,10 @@ button.buttons:hover {
 button.portfolio-filter {
     background-color: var(--botton-portfolio-bgc-color);
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: inherit;
 }
 
 button.portfolio-filter:hover,
