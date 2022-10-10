@@ -14,17 +14,24 @@
 }
 
 body {
+    background-color: var(--bgc-page);
     font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
-.uppercase-text {
-    text-transform: uppercase;
+
+.link {
+    text-decoration: none;
 }
 
 /* LOGO */
 .logo {
     color: var(--accent-text-color);
     font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 header .logo > span {
@@ -40,8 +47,15 @@ footer .logo > span {
 .site-nav .link {
     color: var(--title-text-color);
 }
+
  .contacts-nav .link {
     color: var(--primary-text-color);
+ }
+
+ .site-nav .link,
+ .contacts-nav .link {
+
+    letter-spacing: 0.02em;
  }
 
 .site-nav .link:hover,
@@ -55,15 +69,22 @@ footer .logo > span {
     color: var(--accent-text-color);
 }
 
+header .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02;
+}
+
 /* HERO */
 
 .hero-title {
     color: red;
-}
-
-.main-portfolio,
-.main-page {
-    background-color: var(--bgc-page);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
 }
 
 /* SECTION */
@@ -80,21 +101,68 @@ footer .logo > span {
     background-color: var(--botton-portfolio-bgc-color);
 }
 
+.features h3.section-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.features p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+section h2.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.section-four h3.section-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.section-four p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
 /* FOOTER */
 
 footer {
     background-color: var(--footer-bgc);
 }
 
-address .map-link {
+address a.map-link.link {
     color: var(--text-white-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 address a.link {
     color: var(--botton-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+address {
+    font-style: normal;
 }
 
 /* BUTTON */
+
+button {
+    font-family: inherit;
+}
 
 button.main-page {
     background-color: var(--accent-text-color);
