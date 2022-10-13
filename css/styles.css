@@ -141,6 +141,13 @@ section h2.section-title {
 
 }
 
+.main-page .section h2.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
 .main-portfolio h1.section-title {
     font-weight: 700;
     font-size: 36px;
